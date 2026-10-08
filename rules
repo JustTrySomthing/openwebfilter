@@ -227,6 +227,7 @@ $discard,site=overstock.com
 $discard,site=bedbathandbeyond.com
 $discard,site=potterybarn.com
 $discard,site=westelm.com
+$discard,site=wayfair.com
 $discard,site=williams-sonoma.com
 $discard,site=crateandbarrel.com
 $discard,site=cb2.com
@@ -1344,3 +1345,24 @@ $discard,site=cloudfront.net
 |http://gettyimages.*$discard
 |https://*.gettyimages.*$discard
 |http://*.gettyimages.*$discard
+
+! Gently demote internal search pages
+/search/$downrank=2
+/search?$downrank=2
+?s=$downrank=2
+& s=$downrank=2
+
+! Gently demote tag archives and paginated listings
+/tag/$downrank=1
+/tags/$downrank=1
+/page/$downrank=1
+
+! Gently demote shopping utility pages
+/cart^$downrank=2
+/checkout^$downrank=2
+/account/login^$downrank=2
+/my-account^$downrank=2
+
+! Exclude WordPress login and administration pages
+/wp-login.php^$discard
+/wp-admin/$discard
