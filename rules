@@ -97,10 +97,6 @@ $discard,site=amazon.ca
 $discard,site=amazon.de
 $discard,site=amazon.com.au
 $discard,site=amzn.to
-$discard,site=unicefusa.org
-$discard,site=tenthousandvillages.com
-$discard,site=novica.com
-$discard,site=novica.com
 $discard,site=temu.com
 $discard,site=aliexpress.com
 $discard,site=alibaba.com
@@ -148,7 +144,6 @@ $discard,site=artfinder.com
 $discard,site=shutterstock.com
 $discard,site=vecteezy.com
 $discard,site=fotosearch.com
-$discard,site=gettyimages.ca
 $discard,site=gettyimages.com
 $discard,site=gettyimages.com.au
 $discard,site=gettyimages.co.uk
@@ -174,8 +169,6 @@ $discard,site=designbundles.net
 $discard,site=fontbundles.net
 $discard,site=gumroad.com
 $discard,site=itch.io
-$discard,site=stockfreeimages.com
-$discard,site=photostore.mlb.com
 
 ! Freelance, course, and fundraising middlemen
 $discard,site=fiverr.com
@@ -227,7 +220,6 @@ $discard,site=overstock.com
 $discard,site=bedbathandbeyond.com
 $discard,site=potterybarn.com
 $discard,site=westelm.com
-$discard,site=wayfair.com
 $discard,site=williams-sonoma.com
 $discard,site=crateandbarrel.com
 $discard,site=cb2.com
@@ -1322,7 +1314,6 @@ $discard,site=vercel.com
 $discard,site=verywellfamily.com
 $discard,site=vice.com
 $discard,site=vista.com
-$discard,site=vista.com
 $discard,site=wawa.com
 $discard,site=whataburger.com
 $discard,site=whatsapp.com
@@ -1345,115 +1336,3 @@ $discard,site=cloudfront.net
 |http://gettyimages.*$discard
 |https://*.gettyimages.*$discard
 |http://*.gettyimages.*$discard
-
-! Gently demote internal search pages
-/search/$downrank=2
-/search?$downrank=2
-?s=$downrank=2
-& s=$downrank=2
-
-! Gently demote tag archives and paginated listings
-/tag/$downrank=1
-/tags/$downrank=1
-/page/$downrank=1
-
-! Gently demote shopping utility pages
-/cart^$downrank=2
-/checkout^$downrank=2
-/account/login^$downrank=2
-/my-account^$downrank=2
-
-! Exclude WordPress login and administration pages
-/wp-login.php^$discard
-/wp-admin/$discard
-
-! Additional social, video, and gaming platforms
-$discard,site=mail.ru
-$discard,site=dzen.ru
-$discard,site=ok.ru
-$discard,site=qq.com
-$discard,site=line.me
-$discard,site=viber.com
-$discard,site=wechat.com
-$discard,site=bilibili.com
-$discard,site=douyin.com
-$discard,site=capcut.com
-$discard,site=roblox.com
-$discard,site=epicgames.com
-$discard,site=steampowered.com
-$discard,site=steamcommunity.com
-$discard,site=ea.com
-$discard,site=nintendo.com
-$discard,site=ubisoft.com
-$discard,site=rockstargames.com
-$discard,site=activision.com
-$discard,site=blizzard.com
-$discard,site=battle.net
-$discard,site=riotgames.com
-
-! Additional large technology and consumer companies
-$discard,site=autodesk.com
-$discard,site=hubspot.com
-$discard,site=grammarly.com
-$discard,site=duolingo.com
-$discard,site=xiaomi.com
-$discard,site=mi.com
-$discard,site=huawei.com
-$discard,site=tencent.com
-$discard,site=roku.com
-$discard,site=ring.com
-$discard,site=tp-link.com
-$discard,site=netgear.com
-$discard,site=dlink.com
-$discard,site=garmin.com
-$discard,site=fitbit.com
-$discard,site=gopro.com
-$discard,site=canon.com
-$discard,site=epson.com
-$discard,site=brother.com
-$discard,site=xerox.com
-$discard,site=seagate.com
-$discard,site=razer.com
-$discard,site=msi.com
-$discard,site=gigabyte.com
-
-! Additional marketplaces and regional marketplace domains
-$discard,site=ozon.ru
-$discard,site=wildberries.ru
-$discard,site=allegro.pl
-$discard,site=avito.ru
-$discard,site=mobile.de
-$discard,site=kleinanzeigen.de
-$discard,site=rakuten.co.jp
-$discard,site=shopee.com.br
-$discard,site=shopee.co.id
-$discard,site=shopee.ph
-$discard,site=shopee.vn
-$discard,site=shopee.sg
-$discard,site=shopee.co.th
-$discard,site=lazada.co.id
-$discard,site=lazada.co.th
-$discard,site=lazada.com.my
-$discard,site=lazada.com.ph
-$discard,site=lazada.sg
-$discard,site=mercadolibre.com.ar
-$discard,site=mercadolibre.cl
-$discard,site=mercadolibre.com.co
-$discard,site=amazon.co.za
-$discard,site=amazon.ae
-$discard,site=amazon.sa
-$discard,site=amazon.eg
-$discard,site=amazon.com.tr
-
-! Additional corporate publications and information services
-$discard,site=techcrunch.com
-$discard,site=engadget.com
-$discard,site=rd.com
-$discard,site=bizjournals.com
-$discard,site=adweek.com
-$discard,site=adage.com
-$discard,site=billboard.com
-$discard,site=weather.com
-$discard,site=wunderground.com
-$discard,site=accuweather.com
-$discard,site=statista.com
