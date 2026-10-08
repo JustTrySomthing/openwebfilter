@@ -148,6 +148,7 @@ $discard,site=artfinder.com
 $discard,site=shutterstock.com
 $discard,site=vecteezy.com
 $discard,site=fotosearch.com
+$discard,site=gettyimages.ca
 $discard,site=gettyimages.com
 $discard,site=gettyimages.com.au
 $discard,site=gettyimages.co.uk
@@ -173,6 +174,8 @@ $discard,site=designbundles.net
 $discard,site=fontbundles.net
 $discard,site=gumroad.com
 $discard,site=itch.io
+$discard,site=stockfreeimages.com
+$discard,site=photostore.mlb.com
 
 ! Freelance, course, and fundraising middlemen
 $discard,site=fiverr.com
@@ -1317,6 +1320,7 @@ $discard,site=variety.com
 $discard,site=vercel.com
 $discard,site=verywellfamily.com
 $discard,site=vice.com
+$discard,site=vista.com
 $discard,site=vista.com
 $discard,site=wawa.com
 $discard,site=whataburger.com
